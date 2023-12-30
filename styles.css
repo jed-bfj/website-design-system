@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    background-color:black;
+    color:white;
+    margin:0;
+    padding: 0;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color:darkslategrey;
+}
+
+.nav-content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    background-color:inherit;
+}
+
+.nav-content ul{
+    list-style:none;
+    background-color:inherit;
+}
+
+.nav-content li {
+    display:inline-block;
+    margin-right: 20px;
+    background-color:inherit;
+}
+
+.nav-content a {
+    background-color:inherit;
+}
+
+.nav-content img {
+    float:right;
+    width:40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color:darkslategrey
+}
+
+.banner {
+    padding-top: 500px;
+    width: 100%;
+    background-image: url(resources/images/group1.png);
+    background-size: cover;
+    background-position: center;
+    background-color:white;
+    position: relative; 
+}
+
+.banner-box {
+    position: absolute; 
+    left: 40px;
+    top: 300px;
+    bottom: 40px;
+    right: 40px;
+    margin: 0; 
+    background-color:inherit;
+    display:inline-block;
+    max-width:max-content;
+}
+
+.banner-box h1, 
+.banner-box p,
+.banner-box button,
+.banner-box .button-box{
+    background-color:white;
+    color:black;
+    padding: 10px;
+}
+
+.button-box button{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.button-box button:hover{
+    background-color:lightgrey;
+    cursor:pointer;
+}
+
+.button-box button:active{
+    background-color:lightblue;
+    color:white;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    box-sizing: border-box; 
+}
+
+
+section {
+    width: 100%;
+    max-width: 80%;
+    padding-left: 40px;
+    background-color: black;
+    box-sizing: border-box;
+    margin-bottom: 40px; 
+}
+
+#colors{
+    padding-top: 20px;
+}
+
+
+
+section table thead {
+    background-color: #000;
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    border: 2px solid white;
+    table-layout: fixed; 
+}
+
+thead {
+    background-color: darkslategrey;
+}
+
+thead td {
+    font-weight: bold;
+    text-align: center;
+    background-color:darkslategrey;
+    color: white;
+    padding: 10px;
+}
+
+tbody td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+tbody td:last-child {
+    background-color: var(--color);
+    width: 40px;
+    min-width: 40px;
+}
+
+
+thead td,
+tbody td {
+    width: calc(100% / 3); 
+}
+
+.bold {
+    font-style:bold;
+}
+
+.italics {
+    font-style:italic;
+}
+
+.default {
+    font-style:normal;
+}
+
+.arial{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.helvetica{
+    font-family:Helvetica, sans-serif;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.georgia{
+    font-family:Georgia, sans-serif;
+}
+.verdana{
+    font-family:Verdana, sans-serif;
+}
+
+#buttons-table td{
+   text-align: center;
+}
+
+#default-button,
+#hover-button,
+#active-button {
+    margin: auto;
+    display: block;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#default-button {
+    background-color: white;
+    color: black;
+}
+
+#hover-button {
+    background-color: lightgrey;
+    color:black;
+}
+
+#active-button {
+    background-color: lightblue;
+    color: white;
+}
+
+
+footer {
+    background-color: darkslategrey;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    width: 100%;
+    background-color: inherit;
+}
+.left-footer,
+.right-footer {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+}
+
+.right-footer img, a{
+    width:40px;
+    height: 40px;
+    margin-right: 10px; 
+    background-color:darkslategrey
+}
+
+.left-footer p{
+    color: white; 
+    margin: 0;
+    background-color: inherit;
+}
